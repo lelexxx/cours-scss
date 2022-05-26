@@ -6,16 +6,16 @@
 .essai input {
     width: 30px;
     height: 30px;
-    text-align: center;
     text-transform: uppercase;
+    @include center;
 }
 
 #grid {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
+    @include center;
+    
 }
 
 .goodPos {

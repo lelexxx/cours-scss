@@ -4,3 +4,8 @@
     color: $txt-color;
     margin-bottom: $standart-margin;
 }
+
+@mixin center{
+    text-align: center;
+    justify-content: center;
+}

@@ -1,8 +1,11 @@
+//Les uses doivent être en tout premier
+@use 'variables' as variables;
+
 //Les mixins peuvent être vues comme des fonctions qui peuvent avoir des paramètres en entrée et du CSS en sortie
 @mixin themePosition($bg-color, $txt-color) {
     background-color: $bg-color;
     color: $txt-color;
-    margin-bottom: $standart-margin;
+    margin-bottom: variables.$standart-margin;
 }
 
 @mixin center{

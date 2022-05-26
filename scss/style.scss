@@ -1,42 +1,42 @@
 //Les uses doivent être en tout premier
-@use 'variables.scss';
-@use 'mixins.scss';
+@use 'variables' as variables;
+@use 'mixins' as mixins;
 
 //Css classiques
 .essai input {
     width: 30px;
     height: 30px;
     text-transform: uppercase;
-    @include center;
+    @include mixins.center;
 }
 
 #grid {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    @include center;
+    @include mixins.center;
     
 }
 
 .goodPos {
-    @include themePosition($success-bg-color, $success-txt-color);
+    @include mixins.themePosition(variables.$success-bg-color, variables.$success-txt-color);
 }
 
 .badPos {
-    @include themePosition($warning-bg-color, $warning-txt-color);
+    @include mixins.themePosition(variables.$warning-bg-color, variables.$warning-txt-color);
 }
 
 .nothing {
-    @include themePosition($nothing-bg-color, $nothing-txt-color);
+    @include mixins.themePosition(variables.$nothing-bg-color, variables.$nothing-txt-color);
 }
 
 //Boucle
 @for $i from 1 through 5 {
     .mb-#{$i} {
-        margin-bottom: $i * $standart-margin;
+        margin-bottom: $i * variables.$standart-margin;
     }
     .mt-#{$i} {
-        margin-top: $i * $standart-margin;
+        margin-top: $i * variables.$standart-margin;
     }
 }
 

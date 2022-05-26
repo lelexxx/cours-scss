@@ -1,2 +1,8 @@
+#np
 node_modules
+
+#VS code
+.vs
+
+#app
 public

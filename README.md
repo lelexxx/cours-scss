@@ -1,7 +1,7 @@
 ## Installation
 
 > npm install<br/>
-> sass scss/style.scss public/css/style.css
+> sass scss/style.scss dist/css/style.css
 
 Vous pouvez utiliser l'option `--watch` afin de compiler vos fichiers scss à chaque sauvegarde.
 

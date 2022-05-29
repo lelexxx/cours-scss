@@ -21,5 +21,6 @@ Une fois la configuration faite il suffit de lancer webpack via la commande :
 
 ## Ressources
 
-* [La documentation](https://sass-lang.com/documentation)<br/>
-* [Playground](https://www.sassmeister.com/)
+* [La documentation SASS](https://sass-lang.com/documentation)<br/>
+* [Playground SCSS](https://www.sassmeister.com/)
+* [SASS via Webpack](https://webpack.js.org/loaders/sass-loader/#getting-started)

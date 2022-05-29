@@ -3,26 +3,22 @@
 @use 'mixins' as mixins;
 
 //Css classiques
-.essai input {
-    width: 30px;
-    height: 30px;
-    text-transform: uppercase;
-    @include mixins.center;
-}
-
-#grid {
-    margin-top: 20px;
+#main {
     display: flex;
     flex-direction: column;
+    width: 80%;
     @include mixins.center;
     
+    @media only screen and (max-width: 600px){
+        width: 100%;
+    }
 }
 
-.goodPos {
+.good {
     @include mixins.themePosition(variables.$success-bg-color, variables.$success-txt-color);
 }
 
-.badPos {
+.bad {
     @include mixins.themePosition(variables.$warning-bg-color, variables.$warning-txt-color);
 }
 
@@ -41,16 +37,13 @@
 }
 
 //Héritage
-#id > p {
-    margin-top: 5px;
-    &:hover {
-        color: blue;
-        cursor: pointer;
-    }
-    & > p {
-        color: red;
-        & span {
-            color: white;
+#main > div {
+    & span {
+        font-style: italic;
+
+        &.highlight:hover {
+            color: blue;
+            cursor: pointer;
         }
-    }
+    }    
 }

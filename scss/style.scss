@@ -1,24 +1,22 @@
 //Les uses doivent être en tout premier
 @use 'variables' as variables;
 @use 'mixins' as mixins;
-
 //Css classiques
 #main {
     display: flex;
     flex-direction: column;
     width: 80%;
     @include mixins.center;
-    
-    @media only screen and (max-width: 600px){
+    @media only screen and (max-width: 600px) {
         width: 100%;
     }
 }
 
-.good {
+.check {
     @include mixins.themePosition(variables.$success-bg-color, variables.$success-txt-color);
 }
 
-.bad {
+.uncheck {
     @include mixins.themePosition(variables.$warning-bg-color, variables.$warning-txt-color);
 }
 
@@ -37,13 +35,11 @@
 }
 
 //Héritage
-#main > div {
+#main>div {
     & span {
         font-style: italic;
-
         &.highlight:hover {
-            color: blue;
             cursor: pointer;
         }
-    }    
+    }
 }

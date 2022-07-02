@@ -23,7 +23,7 @@ Vous pouvez utiliser l'option `--watch` afin de compiler vos fichiers scss à ch
 
 ## Lancement depuis le repo
 
-> npm install
+> npm install<br/>
 > npx webpack
 
 Vous pouvez utiliser l'option `--watch` afin de compiler vos fichiers scss à chaque sauvegarde.

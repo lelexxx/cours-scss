@@ -1,4 +1,15 @@
-## Via SASS (from scratch)
+# Sass
+
+## Présentation
+
+`Sass` (`S`yntactically `A`wesome `S`tyle`S`heets) est un langage de feuille de style, qui vous offre de nouvelles fonctionnalités.
+Il vous permet d'utiliser des variables, fonctions, règles d'imbrication (nested rules) entre autre afin de générer du CSS brut (via compilation).
+
+Le `Sass` est aujourd'hui disponible via 2 syntaxes :
+* la syntaxe d'origine qui fonctionne par indentation, les sauts de ligne et qui utilise l'extension `.sass`
+* la nouvelle syntaxe qui utilise les mêmes séparateurs que le CSS (et donc compatible avec ce dernier) et qui utilise l'extension `.scss`
+
+## Via Sass (from scratch)
 
 > npm --save-dev install sass<br/>
 > sass scss/style.scss dist/css/style.css

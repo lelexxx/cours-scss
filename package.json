@@ -1,5 +1,12 @@
 {
-    "dependencies": {},
+    "name": "cours-scss",
+    "description": "Sample repository to present SCSS to students.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/lelexxx/cours-scss.git"
+    },
+    "author": "Alexandre Ruiz <rruiz.alex@gmail.com>",
+    "keywords": ["cours", "teach", "sass", "scss"],
     "devDependencies": {
         "css-loader": "^6.7.1",
         "extract-loader": "^5.1.0",

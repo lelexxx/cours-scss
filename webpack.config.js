@@ -13,7 +13,7 @@ module.exports = {
                     }
                 },
                 {
-                    loader: 'extract-loader'
+                    loader: 'extract-loader' //permet de convertir le fichier obtenu en CSS (initialement webpack converti le scss en JS)
                 },
                 {
                     loader: 'css-loader'
